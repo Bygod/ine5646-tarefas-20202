@@ -20,4 +20,3 @@ const servidor = LOCAL ? https.createServer(opcoesHTTPS, f) : http.createServer(
 
 // eslint-disable-next-line no-console
 servidor.listen(PORTA, () => console.log(msgNoAr))
-const oloco = "dois"
