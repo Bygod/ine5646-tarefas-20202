@@ -10,7 +10,7 @@ const opcoesHTTPS = {
   key: fs.readFileSync(path.resolve(__dirname, '../cert/key.pem')),
   cert: fs.readFileSync(path.resolve(__dirname, '../cert/cert.pem'))
 }
-const PORTA = process.env.PORT || 3000
+const PORTA = process.env.PORT || 443
 const LOCAL = process.env.LOCAL === 'sim'
 const msgNoAr = `Servidor no ar escutando na porta ${PORTA}...`
 

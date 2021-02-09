@@ -25,13 +25,8 @@ class Pessoa {
  * @returns [Pessoa]
  */
 function selecionaPessoas (pessoas, idadeLimite) {
-  var pessoasSelecionadas = []
-  for (const p of pessoas) {
-    if (p.idade > idadeLimite){
-      pessoasSelecionadas.push(p)
-    }
-  }
-  return pessoasSelecionadas
+  const ehMaisVelhaQue = p => p.idade > idadeLimite
+  return pessoas.filter(ehMaisVelhaQue)
 }
 
 // Dados fictícios
