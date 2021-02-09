@@ -1,5 +1,4 @@
 FROM node:14 as dev
-USER node
 WORKDIR /app
 COPY package*.json ./
 WORKDIR /app

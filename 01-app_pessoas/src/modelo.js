@@ -25,7 +25,13 @@ class Pessoa {
  * @returns [Pessoa]
  */
 function selecionaPessoas (pessoas, idadeLimite) {
-  return pessoas
+  var pessoasSelecionadas = []
+  for (const p of pessoas) {
+    if (p.__idade > 30){
+      pessoasSelecionadas.push(p)
+    }
+  }
+  return pessoasSelecionadas
 }
 
 // Dados fictícios
