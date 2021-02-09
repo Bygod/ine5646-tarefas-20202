@@ -27,7 +27,7 @@ class Pessoa {
 function selecionaPessoas (pessoas, idadeLimite) {
   var pessoasSelecionadas = []
   for (const p of pessoas) {
-    if (p.__idade > 30){
+    if (p.idade > 30){
       pessoasSelecionadas.push(p)
     }
   }
